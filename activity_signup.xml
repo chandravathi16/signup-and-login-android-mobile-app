@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <TableRow
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:baselineAligned="false"
+        android:textAlignment="center"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/Signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="326dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/firstname"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="@string/first_name"
+            android:textAlignment="textEnd" />
+
+        <EditText
+            android:id="@+id/editFirstName"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill,LabelFor" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/lastname"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name"
+            android:textAlignment="textEnd" />
+
+        <EditText
+            android:id="@+id/editLastName"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="@string/date_of_birth"
+            android:textAlignment="textEnd" />
+
+        <EditText
+            android:id="@+id/edit_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            tools:ignore="Autofill,LabelFor" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/gender1"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textAlignment="textEnd" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/female" />
+        </TableRow>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile_number"
+            android:textAlignment="textEnd" />
+
+        <EditText
+            android:id="@+id/editPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            tools:ignore="Autofill,LabelFor" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/email_id"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="@string/e_mail_id"
+            android:textAlignment="textEnd" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            tools:ignore="Autofill,LabelFor" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/password1"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="@string/password_signup"
+            android:textAlignment="textEnd" />
+
+        <EditText
+            android:id="@+id/editPhoneNumber1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/password2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/confirm_password"
+            android:textAlignment="textEnd" />
+
+        <EditText
+            android:id="@+id/editPhoneNumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/adreess"
+            android:textAlignment="textEnd" />
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            tools:ignore="Autofill,LabelFor" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/pincode"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/pincode"
+            android:textAlignment="textEnd" />
+
+        <EditText
+            android:id="@+id/editPincode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            tools:ignore="Autofill,LabelFor" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="RtlHardcoded">
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            tools:ignore="HardcodedText" />
+    </TableRow>
+
+</TableLayout>
